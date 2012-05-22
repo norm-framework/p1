@@ -1,4 +1,4 @@
-A Sample Suite Built with the Norm Framework 
+A Sample Suite Built with the Norm Framework
 ============================================
 
 About Norm
@@ -21,3 +21,6 @@ Creating Your Own Instructions for Norm
 ---------------------------------------
     norm generate instructions_for_validating_my_todolist_app
 
+Got Comments/Suggestions?
+-------------------------
+Don't hesitate to [file an issue](https://github.com/relaxdiego/norm_app/issues/new)!
