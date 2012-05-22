@@ -1,0 +1,52 @@
+A user with a role of (.+) in the system can create a project
+=============================================================
+
+  Variables
+  ---------
+    * role_name    = $1
+    * project_name = 'test'
+
+  Setup
+  -----
+    * Ensure that I have a role of #{ role_name } in the system
+    * Click the Logout button if I'm currently logged in
+    * Fill in the Username field with my username
+    * Fill in the Password field with my password
+    * Click the Login button
+
+  Steps
+  -----
+    * Click the Projects link
+    * Click the New Project button
+    * Fill in the Project Name field with #{ project_name }
+    * Fill in the Project Description field with 'Test project'
+    * Click the Create Project button
+    * A project named #{ project_name } should be visible in the page
+    * The project should exist in the backend cloud
+
+  Teardown
+  --------
+    * Delete the project named #{ project_name } if it exists
+
+
+
+A user with a role of (.+) in the system cannot create a project
+================================================================
+
+  Variables
+  ---------
+    * role_name = $1
+
+  Setup
+  -----
+    * Ensure that I have a role of #{ role_name } in the system
+    * Click the Logout button if I'm currently logged in
+    * Fill in the Username field with my username
+    * Fill in the Password field with my password
+    * Click the Login button
+
+  Steps
+  -----
+    * Click the Projects link
+    * The New Project button should not exist
+

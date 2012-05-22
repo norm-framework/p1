@@ -1,0 +1,21 @@
+Create a Project
+================
+
+  * A user with a role of <Role> in the system <Can or Cannot Create> a project
+
+    | Role            | Can or Cannot Create |
+    |-----------------|----------------------|
+    | System Admin    | Can Create           |
+    | User            | Cannot Create        |
+
+
+  * Non-members of a project cannot view said project
+
+
+  * A new project with attributes <Name>, <Description> is <Valid or Not>
+
+    | Name    | Description     | Valid or Not | Remarks           |
+    |---------|-----------------|--------------|-------------------|
+    | Awesome | Another project | Valid        |                   |
+    | (None)  | Another project | Invalid      | Empty Name        |
+    | Awesome | (None)          | Invalid      | Empty Description |
