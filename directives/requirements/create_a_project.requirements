@@ -1,7 +1,7 @@
 Create a Project
 ================
 
-  Requirement: MCF-5
+  Requirement Outline: MCF-5
     A user with a role of <Role> in the system <Can or Cannot Create> a project
 
     Examples:
@@ -21,7 +21,7 @@ Create a Project
 
 
 
-  Requirement: MCF-7
+  Requirement Outline: MCF-7
     A new project with attributes <Name>, <Description> is <Valid or Not>
 
     Examples:
