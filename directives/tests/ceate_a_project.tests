@@ -4,12 +4,14 @@ Test:
   Variables:
     * Role Name    = $1
     * Project Name = 'test'
+    * My Username  = my_username()
+    * My Password  = my_password()
 
   Setup:
     * Ensure that I have a role of <Role Name> in the system
     * Click the Logout button if I'm currently logged in
-    * Fill in the Username field with my username
-    * Fill in the Password field with my password
+    * Fill in the Username field with <My Username>
+    * Fill in the Password field with <My Password>
     * Click the Login button
 
   Script:
@@ -31,12 +33,14 @@ Test:
 
   Variables:
     * Role Name = $1
+    * My Username  = my_username()
+    * My Password  = my_password()
 
   Setup:
     * Ensure that I have a role of <Role Name> in the system
     * Click the Logout button if I'm currently logged in
-    * Fill in the Username field with my username
-    * Fill in the Password field with my password
+    * Fill in the Username field with <My Username>
+    * Fill in the Password field with <My Password>
     * Click the Login button
 
   Script:
